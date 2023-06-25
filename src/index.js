@@ -9,10 +9,16 @@ app.get('/', (req, res) => {
 });
 
 app.get('/dados', (req, res) => {
-  const dados = {
-    nome: 'Italo',
-    idade: 23
-  }
+  const dados = [
+    {
+      nome: 'Italo',
+      idade: 23
+    },
+    {
+      nome: 'Kelly',
+      idade: 23
+    }
+  ]
   res.send(dados)
 })
 
